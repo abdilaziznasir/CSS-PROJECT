@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ID = edge">
+    <link rel="stylesheet" href="style.css">
+    <title> animation training</title>
+    <style>
+        body {
+            padding: 15px;
+            align-items: center;
+        }
+        @keyframes myanim {
+            to {
+                background-color: blue;
+                transform: translateX(500px) scale(.5);
+            }
+        }
+        .ball {
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+            border-radius: 50%;
+        }
+        .doAnim {
+            animation: myanim 2s forwards;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="ball"> ball animation</div>
+        <img src="" alt="">
+        <button>start</button>
+        <button>end</button>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ID = =edge" >
+    <link rel="stylesheet" href="style.css"> 
+    <title> STYLING CSS WITH COMBINATOR</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        /*div {
+            border: 2px solid blue;
+            padding: 20px;
+            margin: 15px;
+            align-items: center;
+        }
+        h1 {
+            border: 2px solid pink;
+            padding: 20px;
+            margin: 15px;
+            align-items: flex-end;
+            display: flex;
+            flex: 1;*/
+        }
+        h1 ~ p {
+            color: green; 
+        }
+        /* general sibling combinator */
+        h1+p {
+            color: blue;
+        }
+        /* adjecent sibiling combinator */
+        div p {
+            color: red;
+        }
+        /* decendent sibiling combinator */
+        div > p {
+            color: yellow;
+        }
+        /* child selector */
+    </style>
+</head>
+<body>
+    <div>
+        <p> child paragraph before heading</p>
+        <h1> Heading 1</h1>
+        <p> child paragraph after heading</p>
+        <div>
+            <p> grand child paragraph</p>
+        </div>
+        <p> child paragraph</p>
+    </div>
+    <p> paragraph out side of of functions</p>
+</body>
+</html>

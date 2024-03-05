@@ -1,0 +1,39 @@
+body {
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.titlename {
+    font: 40px arial;
+    margin: 5rem 0rem;
+    color: blue;
+}
+.container {
+    position: relative;
+}
+.house {
+    position: absolute;
+    top: 250px;
+    left: -100px;
+    height: 200px;
+    width: 600px;
+    background-color: aqua;
+}
+.house::before {
+    content: " befor";
+    position: absolute;
+    background-color: blue;
+    top: -95px;
+    left: 30px;
+    height: 100px;
+    width: 120px;
+    transform: rotate(-45deg);
+    border: 10px 10px solid;
+    z-index: 2;
+}
+.house::after {
+    content: " ";
+    
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content=" ID = edge">
+    <link rel="stylesheet" href="style.css">
+    <title> CSS ANIMATION</title>
+    <!-- adding css style for html source code -->
+    <style>
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            height: 600px;
+            background-color: aqua;
+            width: 600px;
+            animation-name: slide;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+            animation-timing-function: inherit;
+            animation-delay: 3s;
+            column-gap: 2;
+            row-gap: 3;
+        }
+        IMAGE {
+            justify-content: center;
+            color: red;
+        }
+        .normal {
+            animation-direction: normal;
+        }
+        .reverse {
+            animation-direction: reverse;
+        }
+        .alternate {
+            animation-direction: alternate;
+        }
+        .alternate-reverse {
+            animation-direction: alternate-reverse;
+        }
+        
+        @keyframes slide {
+            0% {
+                transform: rotate(90);
+            }
+          /*  50% {
+                /* transform: rotate(180deg); */
+            /* }* */
+            100% {
+                transform: rotate(360deg);
+            }
+           /* 0% {
+                opacity: 0;
+            }
+            25% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            75% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            } */
+        }
+    </style>
+</head>
+<body>
+    <h1 class="IMAGE"> SIMPLE IMAGE ANIMATION</h1>
+    <!-- html source code -->
+    <div>
+    <img class="normal" src=" Screenshot from 2023-12-21 04-45-10.png">
+    <h1> normal mode</h1>
+    <img class="reverse" src="Screenshot from 2023-12-21 04-45-10.png">
+    <h1> reverse mode</h1>
+    <img class="alternate" src="Screenshot from 2023-12-21 04-45-10.png" alt="">
+    <h1> alternate mode</h1>
+    <img class="alternate-reverse" src="Screenshot from 2023-12-21 04-45-10.png" alt="">
+    <h1> alternate-reverse mode</h1>
+    <img src=" simple training.png" alt=" ">
+    </div>
+    <!-- <img src="/home/abdiharo/Pictures/Screenshots.png"> -->
+</body>
+</html>
